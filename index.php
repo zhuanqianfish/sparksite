@@ -20,6 +20,12 @@ define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./Application/');
 
+//系统根目录
+define('ROOT_PATH', dirname(__FILE__).'/');
+
+//默认生成站点路径
+define('SITE_BASE_PATH', ROOT_PATH.'Site/');
+
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 
