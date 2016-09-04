@@ -1,0 +1,84 @@
+<div class="container">
+<div class="row">
+	<div class="col-md-6">
+		<div class="widget">
+			<div class="widget-head">
+			  <div class="pull-left" height="80">
+			  编辑文章		  </div>
+			  <div class="widget-icons pull-right">
+				<a href="#" class="wminimize"><i class="icon-chevron-up"></i></a> 
+				<a href="#" class="wclose"><i class="icon-remove"></i></a>
+			  </div>  
+			  <div class="clearfix"></div>
+			</div>  
+			<div class="widget-content" >
+			<div class="padd">
+				<div class="form quick-post">
+							  <div class="form-horizontal">                        
+								  <div class="form-group">
+									<form class="form-horizontal" method="post">
+	 <input type="hidden" name="id" value="{$article.id}" /><div class="form-group">
+		<label class="col-sm-2 control-label" for="title">标题</label>
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="title" name="title" id="title"  value="{$article.title}" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="belong_class">所属分类</label>
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="belong_class" name="belong_class" id="belong_class"  value="{$article.belong_class}" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="keyword">关键词</label>
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="keyword" name="keyword" id="keyword"  value="{$article.keyword}" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="content">内容</label>
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="content" name="content" id="content"  value="{$article.content}" />
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="pub_time">发布时间</label>
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="pub_time" name="pub_time" id="pub_time"  value="{$article.pub_time}" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="auther">作者</label>
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="auther" name="auther" id="auther"  value="{$article.auther}" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="short_title">短标题</label>
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="short_title" name="short_title" id="short_title"  value="{$article.short_title}" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" for="save_path">保存路径</label>
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="save_path" name="save_path" id="save_path"  value="{$article.save_path}" />
+		</div>
+	</div>
+	
+	
+		<div class="form-group">
+		<div class="col-md-2 col-md-offset-2">
+			<input type="submit" value="提交" class="btn btn-default" />
+		</div>
+	</div>
+</form>								  </div>              
+							  </div>
+				</div><!--end  paddad-->
+			</div>
+		</div>	
+		</div>	
+	</div>
+</div>
+</div>

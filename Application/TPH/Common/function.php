@@ -2,7 +2,7 @@
 use Think\Model;
 
 define(SQLITE_COLUMN_NAME_KEY, 'name');	//sqlite列名键
-define(MYSQL_COLUMN_NAME_KEY, 'column_name');	//mysql列名键
+define(MYSQL_COLUMN_NAME_KEY, 'COLUMN_NAME');	//mysql列名键
 
 function func1(){
 	echo 'this is func1';
@@ -12,7 +12,7 @@ function func1(){
 function getTableNameList(){
 	$dbType = C('DB_TYPE');
 	$Model = new Model(); // 实例化一个model对象 没有对应任何数据表
-	if($dbType == 'mysql'){
+	if(in_array($dbType, array('mysql', 'mysqli'))){
 		$dbName = C('DB_NAME');
 		$result = Array();
 		$tempArray = $Model->query("select table_name from information_schema.tables where table_schema='".$dbName."' and table_type='base table'");
